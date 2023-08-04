@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>Red Thread</title>
+       <link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" href="reset.css">
+       <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css'><link rel="stylesheet" href="./style.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+       <script src="./js/thread.js"></script>
+       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+       <script src="./js/gsap.min.js"></script>
+       <script src="./js/GSDevTools.min.js"></script>
+       <script src="./js/MotionPathPlugin.min.js"></script>
+       <script src="./js/ScrollTrigger.min.js"></script>
+       <script src="./js/DrawSVGPlugin.min.js"></script>
+       <script src="./js/smooth-scroll.polyfills.min.js"></script>
+       <script src="./js/SplitText.min.js"></script>
+      
+
+       <script>
+        var scroll = new SmoothScroll('a[href*="#"]' , {
+          speed:400,
+        });
+      </script>
+      
+          <!-----------------Hide Header--------------------->
+      <script>
+      $(function(){
+        var firstSecH = $("#cont0").innerHeight();
+        $(window).scroll(function(){
+          winScrollTop = $(this).scrollTop();
+          if(winScrollTop > firstSecH) {
+              $(".to_top").removeClass("hide");
+          } else {
+              $(".to_top").addClass("hide");
+          }
+        });
+      });
+      </script>
+    </head>
+
+<body>
+      <canvas id="waves"></canvas>
+
+  <div class="wrapper">
+
+    <section class="first_view" id="cont0">
+       <header>
+          <div class="mainlogo"><img src="" alt=""/>
+            <p class="logoname">RED THREAD</p></div>
+        
+          <nav class="drawer">
+          <ul class="main_nav">
+          <li class="drawer_top">
+              
+              
+              <a href="#cont0">Top</a></li> 
+            <li> <a href="#cont1">Gallery</a></li>
+            <li><a href="#paralex">Services</a></li>
+            <li><a href="#cont3">News</a></li>
+            <li><a href="#cont4">Contact</a></li>
+            <li><a href="#">EN</a></li>
+            <section class="drawer_logos">
+              <img src="images/dark_inst.svg" alt=""/><img src="images/dark_twitter.svg" alt=""/><img src="images/dark_fb.svg" alt=""/><img src="images/dark_yt.svg" alt=""/>
+            
+            </section>
+          </ul>
+        </nav>	
+          
+          <p class="hamburger"><span></span><span></span></p>  
+      </header>
+
+      
+      <div class="main_text">
+        <p>For that most</p>
+        <p class="wd">wonderful Day</p>
+    
+    </div>
+    <div class="main_imgs">
+
+    <video src="./images/1085341160-preview.mp4" autoplay muted playsinline loop class="myvideo"></video>
+    <svg viewBox="0 0 676.4 599.8" id="rings">
+ <style type="text/css">
+   .st0{display:none;fill:#F7931E;}
+   .st1{fill:#F7931E;}
+ </style>
+ <clipPath transform="scale(0.00147842, 0.00166722)" id="svgPath" clipPathUnits="objectBoundingBox">
+   <path class="st0" d="M810.6-1156l-37.3,25.6c59.5,19.5,102.5,75.5,102.5,141.5c0,82.2-66.6,148.8-148.8,148.8
+     c-10.5,0-20.8-1.1-30.7-3.2c-7.1,11.7-15.3,22.7-24.4,32.9c17.4,5.4,35.9,8.3,55.1,8.3c103.2,0,186.8-83.6,186.8-186.8
+     C913.8-1062.1,871.8-1125.3,810.6-1156z"/>
+     <polygon class="st1" points="408.5,159.8 384.8,153.9 390.9,177.1 		"/>
+     <polygon class="st1" points="437.1,167.4 413.3,161.4 419.5,184.6 		"/>
+     <polygon class="st1" points="416.8,186 410,162.5 393.1,179.5 		"/>
+     <polygon class="st1" points="444.9,193.8 438,170.3 421.1,187.3 		"/>
+     <polygon class="st1" points="381.8,154.7 364.9,171.7 388.7,178.2 		"/>
+     <path class="st1" d="M386.5,231.2c-0.1,0-0.1,0-0.2,0l0.1,0.3L386.5,231.2z"/>
+     <path class="st1" d="M388.5,225.3c0,0,0.1,0,0.1,0l0.2-16.6l0.3-27.2l-24.3-6.7l15.5,33.2L388.5,225.3z"/>
+     <path class="st1" d="M413.3,216.4l29.6-20.3l-24.4-6.5l-13.3,23.3l-8.3,14.5c0.1,0,0.2,0.1,0.3,0.1L413.3,216.4z"/>
+     <polygon class="st1" points="392.1,182.2 394.5,209.7 395.2,217.4 399.7,211 415.9,188.8 		"/>
+     <path class="st1" d="M321.9,381.1c-14.7,12.1-33.5,19.3-54,19.3c-47,0-85-38.1-85-85c0-4.4,0.3-8.7,1-12.8c6.3-40.8,41.5-72,84-72
+       c47,0,85,38.1,85,85c0,8.8-1.3,17.3-3.8,25.3c0,0,0,0,0,0c-2,6.5-4.8,12.6-8.2,18.4c6.5,3.3,13.3,5.9,20.5,7.9
+       c8.5-15.3,13.3-32.9,13.3-51.6c0-30.7-12.9-58.3-33.6-77.7c0,0,0,0,0,0c-4.8-4.5-10-8.6-15.5-12.1c0,0,0.1-0.1,0.1-0.1
+       c-16.6-10.7-36.4-16.9-57.6-16.9c-53.4,0-97.7,39.3-105.5,90.6c-0.8,5.3-1.2,10.8-1.2,16.3c0,58.9,47.8,106.7,106.7,106.7
+       c16.8,0,32.8-3.9,46.9-10.9c0,0-0.1-0.1-0.1-0.1c10.6-5.2,20.2-12.1,28.5-20.3C335.8,388.3,328.7,384.9,321.9,381.1z"/>
+     <path class="st1" d="M373.7,230.1c4.3,0,8.5,0.4,12.7,1.1l-9-19.2c-1.2,0-2.4-0.1-3.6-0.1c-15.7,0-30.4,4-43.2,11.1
+       c5.5,3.8,10.8,8,15.8,12.5C354.8,232,364,230.1,373.7,230.1z"/>
+     <path class="st1" d="M461,282.3C461,282.3,460.9,282.3,461,282.3c-5.9-26.7-23.6-49-47.5-61l-17.8,12.2c0,0-0.1,0-0.1,0l-0.3,0.5
+       l0.5-0.3c28.4,9.4,48.9,36.2,48.9,67.7c0,39.4-31.9,71.3-71.3,71.3c-5,0-10-0.5-14.7-1.5c0,0,0,0,0,0c-7.3-1.5-14.3-4.2-20.6-7.8
+       c0,0,0,0,0,0c-21.5-12.3-35.9-35.4-35.9-61.9c0-8.5,1.5-16.6,4.2-24.1c3-8.3,7.5-15.9,13.1-22.4c-4.7-3.8-9.8-7.3-15-10.4
+       c-7.7,9.3-13.6,20.3-17,32.2c-1,3.6-1.8,7.3-2.4,11c0,0,0,0,0,0c-0.7,4.5-1.1,9.1-1.1,13.8c0,49.4,40.1,89.5,89.5,89.5
+       c49.4,0,89.5-40.1,89.5-89.5C463,294.9,462.3,288.5,461,282.3z"/>
+   <path class="st0" d="M2294.8-1156l-37.3,25.6C2317-1110.9,2360-1055,2360-989c0,82.2-66.6,148.8-148.8,148.8
+     c-10.5,0-20.8-1.1-30.7-3.2c-7.1,11.7-15.3,22.7-24.4,32.9c17.4,5.4,35.9,8.3,55.1,8.3c103.2,0,186.8-83.6,186.8-186.8
+     C2398-1062.1,2356-1125.3,2294.8-1156z"/>
+    </clipPath>
+</svg>
+</div>
+    </section>
+
+<section class="gallery" id="cont1">
+
+  <svg viewBox="0 0 962.084 1160.241" id="lovesvg">
+    <path class="theLine" id="Path_17" data-name="Path 17" d="M159.649,731.478C367.579,785.35,322.862,871.226,280,830.9s-2.619-67.019,59.778-52.229,73.952,63.784,76.726,74.877,32.354,91.054-47.607,152.989-82.734,60.086-82.734,60.086-73.028-55.464-76.726-57.313-71.641-52.691-17.1-106.769c0,0,51.767-41.136,95.214,24.5,0,0,42.523-63.322,91.978-26.345,0,0,24.035,11.093,23.572,42.523,0,0,.462,14.791-10.168,19.412s-12.479,15.715-15.253,21.724-10.168,21.261-20.337,12.479-1.849-13.866,0-14.328,5.546,10.168-6.933,13.4-4.622,3.7-1.386,6.933,2.362,9.655-2.568,9.039-8.525-.719-7.909-9.963c0,0-.719,13.352-7.909,12.325s-5.238-7.806-2.26-8.012,7.909-1.233,8.936,6.779-6.984,6.984-7.806,6.676-7.6-.925-6.471-9.963c0,0-.411,15.509-3.081,17.05,0,0-3.389,5.752-8.628,1.746,0,0-10.168-22.391-9.141-24.959s5.341-7.292,7.19-1.13,5.136,22.8-5.649,31.532-26.8,12.32-7.306,51.681,71.45,90.939,192.5,58.4,97.815,30.079,97.815,30.079-156.052,170-33.906,245.232-30,208.03,189.708,271.9S1122,1746.077,1121.1,1891.232" transform="translate(-159.524 -730.994)" fill="none" stroke="red" stroke-miterlimit="10" stroke-width="4"/>
+    
+  </svg>
+
+  <svg xmlns="http://www.w3.org/2000/svg" width="4" height="5500" viewBox="0 0 3 6822" id="middle_line">
+    <line id="Line_1" data-name="Line 1" y2="6822" transform="translate(1.5)" fill="none" stroke="red" stroke-width="4"/>
+  </svg>
+  
+  
+
+<div>
+<img class="gal_main_img reveal" src="./images/img1.jpeg" alt="">
+</div>
+
+
+</section>
+
+
+<section class="cont2">
+
+  <div class="img2">
+    
+    <img class="gal_img2 reveal" src="./images/img2.jpeg" alt="">
+  <p class="aboutus reveal right">We are a full-service wedding and event planning company dedicated to once-in-a-lifetime celebrations.</p>
+  </div>
+
+    <svg width="961.221" height="1203.457" viewBox="0 0 961.221 1203.457" id="thread2">
+      <path class="theLine2" data-name="path 19" d="M1920,2517.371s-165.471-84.937-163.494,11.778,97.006,14.369,47.565,89.045-91.338,18-153.63,17.753-152.582,42.358-60.81,157.594,28.755,370.593-114.29,363.349-125.957,134.2,63.511,194.275-581.786,102.418-579.34,334.645" transform="translate(-959.007 -2482.359)" fill="none" stroke="red" stroke-width="4"/>
+    </svg>
+
+
+    </svg>
+    
+
+  <div class="sub_cont1">
+      <img class="img3 reveal left" src="./images/img5.jpeg" alt="">
+  
+  <p class="text1 reveal left">Endless Discovery</p>
+  </div>
+</section>
+
+
+
+<section class="cont3">
+ <img class="img4 reveal right" src="./images/img9.webp" alt="">
+  <svg width="962.994" height="752.759" viewBox="0 0 962.994 752.759" id="thread3">
+    <path class="theLine3" data-name="Path 23" d="M1920,6842.545s-526.217,46.247-310.085,60.709,367.172,55.5,184.475,60.581-265.355,35.562-105.781,45.3,310.59,88.506,69.94,89.529S913.134,7243.513,1106.8,7293.631s190.532,211.645,22.089,223.072-170.257,77.066-170.257,77.066" transform="translate(-957.137 -6841.051)" fill="none" stroke="red" stroke-width="4"/>
+  </svg>
+
+
+</section>
+
+
+<section class="cont4">
+
+<p class="quote reveal right">"You don't marry the person you can live with—you marry the person you can't live without."</p>
+
+  <div class="sub_cont2">
+<img class="img5 reveal left" src="./images/img14.jpeg" alt="">
+
+  <p class="text2 reveal left">Gorgeous Bouquet</p>
+  </div>
+
+</section>
+
+
+<section class="cont5" id="cont2">
+  <div id="paralex">
+
+    <section class="first">
+      <div class="outer">
+        <div class="inner">
+          <div class="bg one">
+            <h2 class="section-heading">Dresses</h2>
+          </div>
+        </div>
+      </div>
+    
+    </section>
+    <section class="second">
+      <div class="outer">
+        <div class="inner">
+          <div class="bg">
+            <h2 class="section-heading">Accesorries</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="third">
+      <div class="outer">
+        <div class="inner">
+          <div class="bg">
+            <h2 class="section-heading">Venues & Restaurants</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="fourth">
+      <div class="outer">
+        <div class="inner">
+          <div class="bg">
+            <h2 class="section-heading">Makeups</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="fifth">
+      <div class="outer">
+        <div class="inner">
+          <div class="bg">
+            <h2 class="section-heading">Other</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sixth">
+      <div class="outer">
+        <div class="inner">
+          <div class="bg">
+            <h2 class="section-heading">Other</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</section>
+
+<section class="cont6">
+  <svg width="961.506" height="1158.338" viewBox="0 0 961.506 1158.338" id="thread4">
+    <path class="theLine4" data-name="Path 24" d="M0,6796s140.693-5.688,188.2,213.954,142.181-21.229,211.935,35.516,76.869,226.664-15.16,296.813S260.016,7502.7,364.521,7610.766s289.81,96.374,438.471,163.779,157.02,124.6,156.953,178.254" transform="translate(0.061 -6794.462)" fill="none" stroke="red" stroke-width="4"/>
+  </svg>
+  
+
+  
+  <div class="sub_cont3">
+    <p class="text3 reveal">Beautiful Venues</p>
+   <img class="img7 reveal" src="./images/img8.jpeg" alt="">
+  </div>
+  
+  <div class="sub_cont4">
+    <img class="img8 reveal" src="./images/img15.jpeg" alt="">
+  <p class="text4 reveal"> Marvellous Items</p>
+  </div>
+
+</section>
+    
+
+<section class="news">
+
+
+  <div class="container" id="cont3">
+    <div class="posts">
+      
+      <div class="posts__item posts__item--main reveal rigth">
+        <div class="posts__image">
+          <img src="./images/img12.jpg" alt="Post image">
+        </div>
+        <div class="posts__information">
+
+          <div class="posts__title">
+            <a href="#">New Wedding Rings Arrived</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="posts__item reveal left">
+        <div class="posts__image">
+          <img src="./images/img18.jpg" alt="Post image">
+        </div>
+        <div class="posts__information">
+          <div class="posts__date">
+            May 24, 2022
+          </div>
+          <div class="posts__title">
+            <a href="#">How To Find the Most Wonderful Accessories</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="posts__item reveal right">
+        <div class="posts__image">
+          <img src="./images/img15.jpeg" alt="Post image">
+        </div>
+        <div class="posts__information">
+          <div class="posts__date">
+            May 01, 2022
+          </div>
+          <div class="posts__title">
+            <a href="#">Glowing Shoes On the Way</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="posts__item reveal">
+        <div class="posts__image">
+          <img src="./images/img16.jpeg" alt="Post image">
+        </div>
+        <div class="posts__information">
+          <div class="posts__date">
+           April 08, 2015
+          </div>
+          <div class="posts__title">
+            <a href="#">LGBT weddings are welcomed</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="posts__item reveal left">
+        <div class="posts__image">
+          <img src="./images/img19.jpeg" alt="Post image">
+        </div>
+        <div class="posts__information">
+          <div class="posts__date">
+            March 08, 2022
+          </div>
+          <div class="posts__title">
+            <a href="#">Georgeous Bouquet Collections</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+</section>
+
+
+<section class="contact">
+
+  <svg width="1839.775" height="1114.583" viewBox="0 0 1839.775 1114.583" id="thread5">
+    <path class="theLine5" data-name="Path 28" d="M80,7952.8s456.57-51.476,369.455,66.044S149.3,8154.017,223.761,8202.979s718.341,31.949,641.8,136.872-371.506,321.668-109.79,335.683,870.808-142.436,804.056-14.72-387.525,404.973-133.784,365.465,463.407-117.239,457.32-38.975,36.229,67.32,36.229,67.32" transform="translate(-79.944 -7941.072)" fill="none" stroke="red" stroke-width="4"/>
+  </svg>
+  
+
+
+  <div class="main" id="cont4">
+    <div class="bio reveal right">
+      <h3 class="header">Red Thread</h3>
+      <p>Tokyo, Shibuya-ku, Dogenzaka 1-1-1 </p>
+      <p>Opening Hours: Weekdays 10:00-20:00 </p><br>
+      Weekends 10:00-18:00
+      <p>Tel.:03-1234-1234</p>
+      
+    </div>
+    <div class="contact reveal left">
+      <form id="form">
+        <h3 class="header">Get In Touch</h3>
+        <fieldset>
+          <label class="fa fa-user" for="name-input" aria-hidden="true"></label>
+          <input type="text" placeholder="Your name..." id="name-input"/>
+        </fieldset>
+        <fieldset>
+          <label class="fa fa-envelope" for="email-input" aria-hidden="true"></label>
+          <input type="email" placeholder="Your email..." id="email-input"/>
+        </fieldset>
+        <fieldset>
+          <label class="fa fa-comment" for="message-input" aria-hidden="true"></label>
+          <textarea placeholder="Your Message..." id="message-input"></textarea>
+        </fieldset>
+        <fieldset>
+          <button type="submit" id="btn-submit">Send</button>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+
+</section>
+
+
+<footer class="reveal">
+   
+  <section class="subscribe1">Sign up for special offers</section>
+  <section class="subscribe2">
+    <p class="email">EMAIL</p>
+    <p class="subs">SUBSCRIBE</p>
+    </section>
+  
+  <section class="sns"><img src="./images/dark_fb.svg" alt=""/><img src="./images/dark_inst.svg" alt=""/><img src="./images/dark_twitter.svg" alt=""/><img src="./images/dark_yt.svg" alt=""/></section>
+  
+  <section class="gnav3">
+    <ul>
+      <li><a href="#cont0">Top</a></li>
+      <li><a href="#cont3">News</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#cont1">Gallery</a></li>
+      <li><a href="#">Partners</a></li>
+      <li><a href="#cont2">Services</a></li>
+    </ul>
+    </section>
+
+<p class="logo">RED THREAD</p>
+<p class="copy">&copy; Red Thread All Rights Reserved.</p>
+</footer>	
+
+
+
+
+</div>
+
+</div>
+
+
+
+<!-----------------Red Threads--------------------->
+<script src="./js/Observer.min.js"></script>
+       <script src="./js/paralex.js"></script>
+
+        <script>
+        $(function(){
+            var waves = new SineWaves({
+              el: document.getElementById('waves'),
+              speed: 1,
+              rotate: 0,
+              width: function() {
+                return $(window).width();
+              },
+              height: function() {
+                return $(window).height();
+              },
+              wavesWidth: '300%',
+              ease: 'SineInOut',
+              waves: [
+                {
+                  timeModifier: 1,
+                  lineWidth: 3,
+                  amplitude: 150,
+                  wavelength: 200,
+                  segmentLength: 1,
+                  type: 'sine',
+                },
+                {
+                  timeModifier: 1,
+                  lineWidth: 2,
+                  amplitude: -75,
+                  wavelength: 100,
+                  segmentLength: 1,
+                  type: 'Fibonacci',
+                },
+                {
+                  timeModifier: 2,
+                  lineWidth: 4,
+                  amplitude: 100,
+                  wavelength: 200,
+                  segmentLength: 5,
+                  type: 'Fibonacci',
+                },
+
+              ],
+              initialize: function (){
+              },
+              resizeEvent: function() {
+                var gradient = this.ctx.createLinearGradient(0, 0, this.width, 0);
+                gradient.addColorStop(0,"rgba(255, 0, 0, 0)");
+                gradient.addColorStop(0.1,"rgba(255, 0, 0, 1)");
+                gradient.addColorStop(0.2,"rgba(255, 0, 0, 0.8)");
+                gradient.addColorStop(0.3,"rgba(255, 0, 0, 1)");
+                gradient.addColorStop(0.4,"rgba(255, 0, 0, 1)");
+                gradient.addColorStop(0.5,"rgba(255, 0, 0, 1)");
+                gradient.addColorStop(0.6,"rgba(255, 0, 0, 1)");
+                gradient.addColorStop(0.7,"rgba(255, 0, 0, 0)");
+                gradient.addColorStop(0.8,"rgba(255, 0, 0, 0)");
+                gradient.addColorStop(0.9,"rgba(255, 0, 0, 0)");
+                gradient.addColorStop(1,"rgba(255, 0, 0, 1)");
+
+                var index = -1;
+                var length = this.waves.length;
+                  while(++index < length){
+                  this.waves[index].strokeStyle = gradient;
+                }
+                // Clean Up
+                index = void 0;
+                length = void 0;
+                gradient = void 0;
+              }
+            });
+        });
+        </script>
+
+
+<!-----------------DrawSVG--------------------->
+        <script>
+gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin, MotionPathPlugin, GSDevTools);
+gsap.defaults({ease: "none"});
+
+const main = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".theLine",
+    scrub: true,
+    start: "top 80%",
+	end: "bottom 80%"
+  }
+  })
+.from(".theLine", {drawSVG:0,})
+
+const main2 = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".theLine2",
+      scrub: true,
+      start: "top center",
+      end: "bottom 80%"
+    }
+    })
+  .from(".theLine2", {drawSVG:0,})
+
+
+  const main3 = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".theLine3",
+      scrub: true,
+      start: "top center",
+      end: "bottom 80%"
+    }
+    })
+  .from(".theLine3", {drawSVG:0,})
+
+
+
+  const main4 = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".theLine4",
+      scrub: true,
+      start: "top center",
+      end: "bottom 80%"
+    }
+    })
+  .from(".theLine4", {drawSVG:0,})
+
+
+  const main5 = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".theLine5",
+      scrub: true,
+      start: "top center",
+      end: "bottom 60%"
+    }
+    })
+  .from(".theLine5", {drawSVG:0,})
+
+
+
+
+
+        </script>
+
+          </script>
+
+    
+	<!-----------------Scroll Animation--------------------->	
+	<script>
+    function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+  
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+  window.addEventListener("scroll", reveal);
+  </script>
+  
+  <!-----------------Drawer--------------------->			
+      <script>
+  $(function(){
+    $(".hamburger").click(function(){
+      $(".drawer").toggleClass("show");
+      $(this).toggleClass("close");
+      
+      if($(this).hasClass("close")){
+        $('body').css('overflow', 'hidden');
+      } else {
+        $('body').css('overflow', 'auto');
+      }
+      
+    });
+    
+    $(".drawer a").click(function(){
+      $(".drawer").removeClass("show");
+      $(".hamburger").removeClass("close");
+      $('body').css('overflow', 'auto');
+    });
+  
+  });
+      </script>
+
+<script>
+
+
+	function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+window.addEventListener("scroll", reveal);
+  
+</script>
+
+</body>
+</html>
